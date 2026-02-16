@@ -33,16 +33,16 @@ class _SlideRoute<T> extends PageRouteBuilder<T> {
     super.settings,
   }) : super(
           pageBuilder: (
-            BuildContext context,
-            Animation<double> animation,
-            Animation<double> secondaryAnimation,
+            context,
+            animation,
+            secondaryAnimation,
           ) =>
               page,
           transitionsBuilder: (
-            BuildContext context,
-            Animation<double> animation,
-            Animation<double> secondaryAnimation,
-            Widget child,
+            context,
+            animation,
+            secondaryAnimation,
+            child,
           ) =>
               SlideTransition(
             position: Tween<Offset>(
